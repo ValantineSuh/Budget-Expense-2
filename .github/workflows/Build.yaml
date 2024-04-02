@@ -3,7 +3,7 @@ name: Build frontend
 on:
   push:
     branches:
-      - '**'
+      - "**"
     tags-ignore:
       - 'v*'
     paths:
