@@ -37,10 +37,6 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Build frontend
-        run: npx tsc
-    
-
   docker-builds:
     runs-on: ubuntu-latest
     permissions:
