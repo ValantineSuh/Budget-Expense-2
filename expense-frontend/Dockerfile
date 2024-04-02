@@ -1,6 +1,6 @@
 FROM node:20 as build
 
-WORKDIR /App-Frontend
+WORKDIR /App-frontend
 
 COPY package*.json tsconfig.json ./
 
