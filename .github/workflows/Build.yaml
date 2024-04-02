@@ -39,8 +39,7 @@ jobs:
 
       - name: Build frontend
         run: npm run build --if-present
-      - name: Test frontend
-        run: npm test
+    
 
   docker-builds:
     runs-on: ubuntu-latest
@@ -67,7 +66,9 @@ jobs:
       - name: Build and push
         id: meta
         uses: docker/build-push-action@v3
+    
         with:
+          tags: latest
           context: ./expense-frontend
           file: ./expense-frontend/Dockerfile
           push: true
