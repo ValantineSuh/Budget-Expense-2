@@ -3,14 +3,14 @@ name: Build frontend
 on:
   push:
     branches:
-      - "**"
+      - '**'
     tags-ignore:
       - 'v*'
     paths:
       - 'expense-frontend/**'
   pull_request:
     branches:
-      - "**"
+      - '**'
     paths:
       - 'expense-frontend/**'
 
