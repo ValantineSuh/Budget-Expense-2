@@ -1,4 +1,12 @@
-FROM ubuntu:latest
-LABEL authors="gis"
+FROM node:18 as build
 
-ENTRYPOINT ["top", "-b"]
+WORKDIR /App-Frontend
+
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+RUN npm run build
+
