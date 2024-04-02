@@ -2,9 +2,9 @@ name: Build frontend
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "**" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "**" ]
     paths: [ 'expense-frontend/**' ]
 
     env:
