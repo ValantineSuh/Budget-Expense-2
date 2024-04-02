@@ -71,7 +71,7 @@ jobs:
 
       - name: Build and push
         uses: docker/build-push-action@v3
-        if: github.event_name != "pull_request"
+
         with:
           context: ./expense-frontend
           file: ./expense-frontend/Dockerfile
