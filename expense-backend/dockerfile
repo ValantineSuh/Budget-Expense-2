@@ -2,7 +2,7 @@
 FROM node:20
 
 # Set the working directory in the container
-WORKDIR /app-backend
+WORKDIR /backend
 
 # Copy package.json and package-lock.json to the container
 COPY package*.json tsconfig.json ./
@@ -12,6 +12,8 @@ RUN npm install
 
 # Copy the rest of the application code to the container
 COPY . .
+
+RUN npm run build
 
 # Expose the port that the app runs on
 EXPOSE 3000
