@@ -31,9 +31,9 @@ jobs:
       - name: Use Node.js 14
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 21.6.2
           cache: 'npm'
-          cache-dependency-path: './expense-backend/package-lock.json'
+          cache-dependency-path: 'expense-backend/package-lock.json'
       - name: Install dependencies
         run: npm ci
 
