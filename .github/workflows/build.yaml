@@ -35,9 +35,7 @@ jobs:
           cache: 'npm'
           cache-dependency-path: './expense-frontend/package-lock.json'
       - name: Install dependencies
-        run: npm install
-      - name: Build application
-        run: npm run build 
+        run: npm ci
 
   docker-builds:
     runs-on: ubuntu-latest
