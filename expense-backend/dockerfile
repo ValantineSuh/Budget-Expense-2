@@ -24,7 +24,6 @@ FROM node:20 AS final
 WORKDIR /app
 
 # Copy the compiled code from the builder stage
-COPY --from=builder /app/dist /app/dist
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./
 

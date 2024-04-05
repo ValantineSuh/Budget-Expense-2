@@ -5,14 +5,18 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "npm run build",
-    "start": "npm start"
+    "build": "mkdir -p dist && tsc",
+    "start": "npm run build && node index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "@types/express": "^4.17.21",
-    "express": "^4.19.2"
+    "@types/typescript": "^2.0.0",
+    "express": "^4.19.2",
+    "install": "^0.13.0",
+    "npm": "^10.5.1",
+    "typescript": "^5.4.4"
   }
 }
