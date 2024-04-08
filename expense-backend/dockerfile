@@ -1,5 +1,5 @@
 # Builder stage
-FROM node:20 AS builder
+FROM node:20.12.2 AS builder
 
 # Set the working directory in the container
 WORKDIR /app
@@ -18,7 +18,7 @@ RUN npm run build
 
 
 # Final image
-FROM node:20 AS final
+FROM node:20.12.2 AS final
 
 # Set the working directory in the container
 WORKDIR /app
