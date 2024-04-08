@@ -7,12 +7,12 @@ on:
     tags-ignore:
       - 'v*'
     paths:
-      - 'expense-backend/**'
+      - './**'
   pull_request:
     branches:
       - "**"
     paths:
-      - 'expense-backend/**'
+      - './**'
 
 env:
   REGISTRY: ghcr.io
@@ -33,7 +33,7 @@ jobs:
         with:
           node-version: 20
           cache: 'npm'
-          cache-dependency-path: './expense-frontend/package-lock.json'
+          cache-dependency-path: './expense-backend/package-lock.json'
       - name: Install dependencies
         run: npm ci
 
