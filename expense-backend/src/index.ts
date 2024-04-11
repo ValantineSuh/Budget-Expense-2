@@ -19,7 +19,7 @@ app.get('/info', (req: Request, res: Response ) => {
 });
 
 // endpoint respond for json 
-app.get('/healt', (req: Request, res: Response ) => {
+app.get('/health', (req: Request, res: Response ) => {
     res.json({"ok": true});
 });
 
