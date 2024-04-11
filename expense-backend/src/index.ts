@@ -10,7 +10,7 @@ const app: Express = express();
 
 // Define a route handler for the root endpoint '/'
 app.get('/', (req: Request, res: Response ) => {
-    res.send('Express ok + TypeScript Server');
+    res.send('Express stop + TypeScript Server');
 });
 
 // Define a route handler for a new endpoint '/info'
