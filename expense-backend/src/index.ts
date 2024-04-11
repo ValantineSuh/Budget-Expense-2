@@ -18,6 +18,11 @@ app.get('/info', (req: Request, res: Response ) => {
     res.send('This is the info endpoint');
 });
 
+// endpoint respond for json 
+app.get('/healt', (req: Request, res: Response ) => {
+    res.json({"ok": true});
+});
+
 // Start the Express server and listen on the defined port
 app.listen(port, () => { 
     console.log(`[server]: Server is running at http://localhost:${port}`);
