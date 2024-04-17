@@ -6,4 +6,23 @@
     "js-yaml": "^4.1.0",
     "typescript": "^5.4.4"
   }
+  "name": "budget-expense-2",
+  "version": "1.0.0",
+  "description": "## Roadmap This is the roadmap for this app. After each change, a commit should be done.",
+  "main": "vite.config.js",
+  "dependencies": {
+    "typescript": "^5.4.4",
+    "undici-types": "^5.26.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "npx tsc",
+    "start": "npm run build && node dist/index.js",
+    "dev": "nodemon src/index.ts",
+    "test": "echo \"Error: no test specified\" && exit 1" 
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+ main
 }
