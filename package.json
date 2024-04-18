@@ -4,15 +4,16 @@
   "description": "## Roadmap This is the roadmap for this app. After each change, a commit should be done.",
   "main": "vite.config.js",
   "dependencies": {
+    "express-winston": "^4.2.0",
     "typescript": "^5.4.4",
-    "undici-types": "^5.26.5"
+    "undici-types": "^5.26.5",
+    "winston": "^3.13.0"
   },
-  "devDependencies": {},
   "scripts": {
     "build": "npx tsc",
     "start": "npm run build && node dist/index.js",
     "dev": "nodemon src/index.ts",
-    "test": "echo \"Error: no test specified\" && exit 1" 
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
