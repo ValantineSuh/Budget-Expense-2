@@ -2,27 +2,9 @@ import express, { Express, Request, Response } from "express";
 import { createLogger, transports, format } from 'winston';
 import expressWinston from 'express-winston';
 import dotenv from 'dotenv';
-import DailyRotateFile = require("winston-daily-rotate-file");
+import logger from './logger'; // Import the logger from the separate module
 
 dotenv.config();
-
-const logger = createLogger({
-    transports: [
-        new transports.Console(),
-        new DailyRotateFile({
-            filename: 'logs/%DATE%-combined.log',
-            datePattern: 'YYYY-MM-DD',
-            zippedArchive: true,
-            maxSize: '20m',
-            maxFiles: '14d'
-        })
-    ],
-    format: format.combine(
-        format.timestamp(),
-        format.json()
-    ),
-    level: 'info' // Set log level
-});
 
 const port = process.env.PORT || 3000;
 
