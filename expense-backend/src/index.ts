@@ -4,6 +4,11 @@ import expressWinston from 'express-winston';
 import dotenv from 'dotenv';
 import DailyRotateFile = require("winston-daily-rotate-file");
 
+// Importing 'express','dotenv' modules and 'helmet'
+import express, { Express, Request, Response } from "express";
+import dotenv from "dotenv"
+import helmet from 'helmet'
+
 dotenv.config();
 
 const logger = createLogger({
@@ -44,6 +49,11 @@ app.use(expressWinston.logger({
     ignoreRoute: function (req, res) { return false; }
 }));
 
+// use helmet
+app.use(helmet());
+
+
+// Define a route handler for the root endpoint '/'
 app.get('/', (req: Request, res: Response ) => {
     logger.info('Accessed the root endpoint');
     res.send('Express stop . + TypeScript Server');
