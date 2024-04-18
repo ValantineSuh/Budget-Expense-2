@@ -16,7 +16,7 @@ const logger = createLogger({
         format.timestamp(),
         format.json()
     ),
-    level: 'info' // Setting the  log level
+    level: 'info' // Setting up the  log level
 });
 
 export default logger;
