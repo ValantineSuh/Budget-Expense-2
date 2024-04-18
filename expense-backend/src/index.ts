@@ -28,7 +28,7 @@ app.use(expressWinston.logger({
 
 app.get('/', (req: Request, res: Response ) => {
     logger.info('Accessed the root endpoint');
-    res.send('Express stop . + TypeScript Server');
+    res.send('Express stop . + TypeScript Server.');
 });
 
 app.get('/info', (req: Request, res: Response ) => {
