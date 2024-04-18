@@ -4,6 +4,7 @@ import expressWinston from 'express-winston';
 import dotenv from 'dotenv';
 import logger from './logger'; // Import the logger from the separate module
 
+
 dotenv.config();
 
 const port = process.env.PORT || 3000;
@@ -26,6 +27,9 @@ app.use(expressWinston.logger({
     ignoreRoute: function (req, res) { return false; }
 }));
 
+
+
+// Define a route handler for the root endpoint '/'
 app.get('/', (req: Request, res: Response ) => {
     logger.info('Accessed the root endpoint');
     res.send('Express stop . + TypeScript Server.');
