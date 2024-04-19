@@ -2,6 +2,8 @@ import React from 'react';
 import BackendHealthStatus from './components/BackendHealthStatus';
 import logo from './logo.svg';
 import './App.css';
+function App() {
+
 
 const App: React.FC = () => {
   return (
