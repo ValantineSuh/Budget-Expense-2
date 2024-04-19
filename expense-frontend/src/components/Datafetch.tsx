@@ -21,7 +21,7 @@ type RestApiResult<T> = {
   onError?: (error: any) => void;
 };
 
-const MyComponent = () => {
+const Datafetch = () => {
   const { data, isLoading, error }: RestApiResult<Data> = useRestApi<Data>('http://localhost:3000/info',);
 
   if (isLoading) {
@@ -41,4 +41,4 @@ const MyComponent = () => {
   
 };
 
-export default MyComponent;
+export default Datafetch;
