@@ -2,7 +2,7 @@ import React from 'react';
 import BackendHealthStatus from './components/BackendHealthStatus';
 import logo from './logo.svg';
 import './App.css';
-import MyComponent from './components/MyComponent';
+import Datafetch from './components/Datafetch';
 function App() {
 
 
