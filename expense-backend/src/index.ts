@@ -1,12 +1,17 @@
-// Importing 'express' module and 'dotenv' module
+// Importing 'express','dotenv' modules and 'helmet'
 import express, { Express, Request, Response } from "express";
 import dotenv from "dotenv"
+import helmet from 'helmet'
 
 dotenv.config();
 
 const port = process.env.PORT || 3000;
 
 const app: Express = express();
+
+// use helmet
+app.use(helmet());
+
 
 // Define a route handler for the root endpoint '/'
 app.get('/', (req: Request, res: Response ) => {
