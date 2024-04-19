@@ -5,7 +5,7 @@ import './index.css';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import MyComponent from './components/MyComponent';
+import Datafetch from './components/Datafetch';
 
 const queryClient = new QueryClient();
 
@@ -15,7 +15,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <QueryClientProvider client={queryClient}>
-      <MyComponent />
+      <Datafetch/>
     </QueryClientProvider>
   </React.StrictMode>
 );
