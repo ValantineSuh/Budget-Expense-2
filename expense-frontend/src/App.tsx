@@ -1,5 +1,3 @@
-// import React from 'react';
-// import logo from './logo.svg';
 import React from 'react';
 import BackendHealthStatus from './components/BackendHealthStatus';
 import logo from './logo.svg';
