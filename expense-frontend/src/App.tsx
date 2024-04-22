@@ -1,8 +1,11 @@
 import React from 'react';
+import BackendHealthStatus from './components/BackendHealthStatus';
 import logo from './logo.svg';
 import './App.css';
-
 function App() {
+
+
+const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
@@ -10,6 +13,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <BackendHealthStatus /> {/* Display the BackendHealthStatus component */}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -21,6 +25,6 @@ function App() {
       </header>
     </div>
   );
-}
+};
 
 export default App;
