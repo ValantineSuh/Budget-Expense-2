@@ -32,7 +32,7 @@ app.use(expressWinston.logger({
 // Define a route handler for the root endpoint '/'
 app.get('/', (req: Request, res: Response ) => {
     logger.info('Accessed the root endpoint');
-    res.send('Express stops + TypeScript Server.');
+    res.send('Express stops . + TypeScript Server.');
 });
 
 app.get('/info', (req: Request, res: Response ) => {
