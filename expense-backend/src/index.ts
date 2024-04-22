@@ -2,7 +2,9 @@ import express, { Express, Request, Response } from "express";
 import { createLogger, transports, format } from 'winston';
 import expressWinston from 'express-winston';
 import dotenv from 'dotenv';
-import logger from './logger'; // Import the logger from the separate module
+import DailyRotateFile = require("winston-daily-rotate-file");
+import logger from './logger';
+
 
 
 dotenv.config();

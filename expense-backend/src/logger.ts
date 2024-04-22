@@ -3,7 +3,7 @@ import DailyRotateFile from 'winston-daily-rotate-file';
 
 const logger = createLogger({
     transports: [
-        new transports.Console(),
+        new transports.Console(), 
         new DailyRotateFile({
             filename: 'logs/%DATE%-combined.log',
             datePattern: 'YYYY-MM-DD',
