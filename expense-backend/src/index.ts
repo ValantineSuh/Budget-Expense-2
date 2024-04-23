@@ -4,6 +4,7 @@ import expressWinston from 'express-winston';
 import dotenv from 'dotenv';
 import DailyRotateFile = require("winston-daily-rotate-file");
 import logger from './logger';
+import helmet from 'helmet'
 
 
 
@@ -13,6 +14,8 @@ const port = process.env.PORT || 3000;
 
 const app: Express = express();
 
+
+app.use(helmet());
 app.use(expressWinston.logger({
     transports: [
         new transports.Console(),
