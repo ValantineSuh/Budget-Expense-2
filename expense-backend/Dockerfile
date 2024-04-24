@@ -4,6 +4,7 @@ FROM node:20.12.2 AS builder
 # Set the working directory in the container
 WORKDIR /app
 
+
 # Copy package.json, package-lock.json, and tsconfig.json to the container
 COPY package*.json tsconfig.json ./
 
