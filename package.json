@@ -1,4 +1,11 @@
 {
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@types/express": "^4.17.21",
+    "jest": "^29.7.0",
+    "js-yaml": "^4.1.0",
+    "typescript": "^5.4.4"
+  }
   "name": "budget-expense-2",
   "version": "1.0.0",
   "description": "## Roadmap This is the roadmap for this app. After each change, a commit should be done.",
@@ -17,4 +24,5 @@
   "keywords": [],
   "author": "",
   "license": "ISC"
+ main
 }
